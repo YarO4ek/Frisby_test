@@ -1,5 +1,5 @@
 const frisby = require("frisby");
-jest.setTimeout(100000);
+jest.setTimeout(10000);
 
 describe("day_15", () => {
     it("Listing web pages", async () => {

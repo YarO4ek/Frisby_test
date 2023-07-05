@@ -1,7 +1,5 @@
-const frisby = require("frisby");
+const frisby = require("frisby")
 const Joi = frisby.Joi;
-
-
 
 describe("Day8", () => {
     it("Check status 200", function () {
