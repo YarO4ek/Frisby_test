@@ -10,7 +10,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-          cashe: npm
+          cache: npm
       - name: NPM inst
         run: npm ci
       - name: Run test
