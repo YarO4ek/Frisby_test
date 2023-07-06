@@ -1,22 +1,32 @@
-const frisby = require('frisby');
-const Joi = frisby.Joi;
-const moment = require('moment');
+const frisby = require("frisby");
+const moment = require("moment");
+const BASE_URL = "https://icanhazdadjoke.com/search";
+const SECOND_URL = "http://worldtimeapi.org/api/ip";
+const random_word = "words()";
 
-describe("Day24", () => {
-    it('Determine day two days from now', () => {
-        return frisby
-            .get('http://worldtimeapi.org/api/ip')
-            .expect('status', 200)
-            .expect('jsonTypes', {
-                abbreviation: Joi.string(),
-                client_ip: Joi.string()
 
-            })
-            .then((response) => {
-                const currentDate = moment(response.json.datetime);
-                const futureDate = currentDate.add(2, 'days').format('dddd');
-
-                console.log('Two days from now is: ' + futureDate);
-            });
-    });
+frisby.globalSetup({
+    request: {
+        timeout: 10000,
+    },
 });
+
+describe("Day_24: Using libraries", () => {
+    it("GET return page with dadjokes including random word", async () => {
+        console.log(random_word);
+        const response = await frisby
+            .get(`${BASE_URL}?term=${random_word}`)
+            .expect('status', 200)
+            .expect('bodyContains', random_word);
+    });
+
+    it("GET today and return +2 days", async () => {
+        const response = await frisby
+            .get('http://worldtimeapi.org/api/ip')
+            .expect('status', 200);
+        let today = response.json.datetime;
+        let output = moment(today).add(2, 'days').format('dddd');
+        console.log(output)
+    });
+})
+
