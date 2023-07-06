@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cebffecc-85e4-40e9-8e05-9cabb618c89e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/2.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_03.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_04.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_05.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_07.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_08.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_09.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_09.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_12.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_13.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_14.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_15.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_16.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_18.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_19.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_20.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_21.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_23.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_25.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_26.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_27.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_28.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/day_29.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_01.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_03.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_04.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_05.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_07.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_08.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_09.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_09.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_12.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_14.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_15.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_18.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_20.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_21.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_23.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_25.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_26.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_27.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_28.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_29.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,21 +68,29 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2RmUl5s27Bciz3WR5ak7BeMMyAo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/yar_ok/Documents/GitHub/Frisby_test&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/yar_ok/Documents/GitHub/Frisby_test/node_modules/jest&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/yar_ok/Documents/GitHub/Frisby_test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/yar_ok/Documents/GitHub/Frisby_test/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="day_07.js" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
@@ -52,10 +112,14 @@
       <updated>1687854897670</updated>
       <workItem from="1687854898717" duration="156000" />
       <workItem from="1688635472169" duration="98000" />
+      <workItem from="1688644894857" duration="620000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
