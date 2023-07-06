@@ -2,7 +2,7 @@ const frisby = require("frisby");
 const URL = 'https://postman.com';
 jest.setTimeout(200000);
 
-describe("Day28", () => {
+describe("Day_28", () => {
     it("Response time is less than 1000ms", async function () {
         const res = await frisby.get(URL);
         expect(res._responseTimeMs).toBeLessThan(1000);
