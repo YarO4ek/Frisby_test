@@ -1,17 +1,18 @@
-const frisby = require("frisby");
-jest.setTimeout(10000);
+const frisby = require('frisby')
 
-describe("day_15", () => {
-    it("Listing web pages", async () => {
-        let page = 0;
-        let status = 200;
+describe('day_15', () => {
+    it('Status code is 200. Write the result to file', async () => {
+        const result = await frisby
+            .get('https://api.spacexdata.com/v4/launches/latest')
+            .expect('status', 200)
 
-        while (status == 200) {
-            page++;
-            const response = await frisby.get(`http://xkcd.com/${page}/info.0.json`);
-            status = response.status;
-        }
-        console.log(page);
-        expect(page).toEqual(404);
-    });
-});
+        const fs = require('fs');
+        var content = JSON.stringify(result.json);
+
+        fs.writeFile('result.json', content, err => {
+            if (err) {
+                console.error(err);
+            }
+        });
+    })
+})

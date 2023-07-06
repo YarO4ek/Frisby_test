@@ -1,6 +1,6 @@
 const frisby = require("frisby");
 
-describe("Day_19", () => {
+describe("day_19", () => {
     it("Get Artist Information", async () => {
         const query = `query getByArtist($name: String!) {
       queryArtists(byName: $name) {

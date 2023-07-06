@@ -1,16 +1,22 @@
-const URL = `https://worldtimeapi.org/api/ip`;
-const frisby = require("frisby");
-const moment = require("moment");
+const frisby = require('frisby');
+const Joi = frisby.Joi;
+const moment = require('moment');
 
-describe("day_24", () => {
-    it("Moment in time", async () => {
-        const result = await frisby.get(`${URL}`).expect("status", 200);
-        const twoDays = moment(result.day_of_week).add(2, "days");
-        const formattedTwoDays = moment(twoDays).format("dddd");
+describe("Day24", () => {
+    it('Determine day two days from now', () => {
+        return frisby
+            .get('http://worldtimeapi.org/api/ip')
+            .expect('status', 200)
+            .expect('jsonTypes', {
+                abbreviation: Joi.string(),
+                client_ip: Joi.string()
 
-        expect(twoDays).not.toBeNull();
-        expect(typeof formattedTwoDays).toBe("string");
+            })
+            .then((response) => {
+                const currentDate = moment(response.json.datetime);
+                const futureDate = currentDate.add(2, 'days').format('dddd');
 
-        console.log(formattedTwoDays);
+                console.log('Two days from now is: ' + futureDate);
+            });
     });
 });

@@ -1,31 +1,25 @@
+const frisby = require('frisby');
+const Joi = frisby.Joi
+hexColor = '989494a'
 
+describe('day_25', () => {
+    it('get color', async () => {
 
-const frisby = require("frisby");
+        const result = await frisby
+            .get(`https://www.thecolorapi.com/id?hex=${hexColor}&format=json`)
+            .expect('status', 200)
+        const body = await result.json;
+        const { hex, rgb, name } = body; //destructuring
+        const fullColor = JSON.stringify({
+            hex: hex.value,
+            rgb: rgb.value,
+            name: name.value
+        });
+        console.log(fullColor);
+        const { post } = frisby;
+        post('https://postman-echo.com/post', { 'payload': fullColor })
+            .expect('status', 200)
+            .expect("json", "data", { payload: fullColor })
 
-describe("Day 25", () => {
-    it ("get random color" () => {
-        module.exports = {};
-
-        function getRandomColor() {
-            return Math.random().toString(16).slice(2, 8).toUpperCase();
-        };
-    });
-    const color = getRandomColor();
-    let currentColor;
-
-    it("get color", async () => {
-        const response = await frisby.get(
-            `https://www.thecolorapi.com/id?hex=${color}`
-        );
-
-        const body = response.json;
-        currentColor = {
-            hex: body.hex.clean,
-            rgb: body.rgb.value,
-            name: body.name.value,
-        };
-
-        expect(response.status).toBe(200);
-        expect(currentColor.hex).toEqual(color);
-    });
-});
+    })
+})
